@@ -2,15 +2,14 @@
 
    .navbar-brand {
       margin-right: 0;
-      padding-top: .5rem;
-      padding-bottom: .3rem;
+      padding-top: .7rem;
+      padding-bottom: .5rem;
       width: 142px;
       height: auto;
    }
 
    .nav-item {
-      padding: 1rem .75rem;
-      line-height: .5rem;
+      padding: .35rem .75rem;
 
       &:before {
          float: left;
@@ -32,6 +31,11 @@
          color: rgba(255, 255, 255, .9);
       }
    }
+
+   .dropdown-menu.show {
+      left: 1.2rem;
+   }
+
 }
 
 .active > .nav-link {
@@ -58,5 +62,13 @@
          padding-right: 0;
          content: '';
       }
+   }
+
+}
+
+@media (max-width: 768px) {
+
+   .dropdown-menu.show {
+      margin-top: 11.8%;
    }
 }
