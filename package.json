@@ -1,0 +1,43 @@
+{
+  "name": "Entrerios",
+  "version": "1.0.0",
+  "description": "Entrerios website project",
+  "main": "main.js",
+  "author": "Lauriel Mesquita <laurielmesquita@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p --color"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "img-loader": "^2.0.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.15",
+    "postcss-loader": "^2.0.9",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "rucksack-css": "^1.0.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "d3": "^4.12.2",
+    "glob-all": "^3.1.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9",
+    "remove": "^0.1.5"
+  }
+}
