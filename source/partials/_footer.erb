@@ -1,0 +1,33 @@
+<footer class="footer bg-dark">
+   <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container d-flex justify-content-md-center">
+         <ul class="navbar-nav">
+            <li class="nav-item<%= " active" if current_page.data.title == "Homepage" %>">
+               <%= link_to "Homepage", "index.html", :relative => true, title: "Homepage", class: "nav-link" %>
+               <% if current_page.data.title == "Homepage" %>
+                  <span class="sr-only">(current)</span>
+               <% end %>
+            </li>
+            <li class="nav-item<%= " active" if current_page.data.title == "Sobre Nós" %>">
+               <%= link_to "Sobre Nós", "about.html", :relative => true, title: "Sobre Nós", class: "nav-link" %>
+               <% if current_page.data.title == "Sobre Nós" %>
+                  <span class="sr-only">(current)</span>
+               <% end %>
+            </li>
+            <li class="nav-item dropdown<%= " active" if current_page.data.title == "Conteúdo" %>">
+               <%= link_to "Conteúdo", "content.html", :relative => true, title: "Conteúdo", class: "nav-link" %>
+               <% if current_page.data.title == "Conteúdo" %>
+                  <span class="sr-only">(current)</span>
+               <% end %>
+            </li>
+            <li class="nav-item<%= " active" if current_page.data.title == "Contato" %>">
+               <%= link_to "Contato", "contact.html", :relative => true, title: "Contato", class: "nav-link" %>
+               <% if current_page.data.title == "Contato" %>
+                  <span class="sr-only">(current)</span>
+               <% end %>
+            </li>
+         </ul>
+      </div>
+      <div class="container"><p>Entrerios © 2017</p></div>
+   </nav>
+</footer>
