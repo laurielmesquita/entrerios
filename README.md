@@ -13,10 +13,10 @@ $ middleman build
 ```
 
 ## Features
-- [middleman 4](https://middlemanapp.com/)
-- [webpack 3](https://webpack.js.org/)
-- [Boostrap 4](https://v4-alpha.getbootstrap.com)
-- [jQuery](http://jquery.com/)
+- Middleman 4
+- Webpack 3
+- Boostrap 4
+- jQuery
 
 ## Requirements
 * [Middleman 4.x](https://middlemanapp.com/basics/install/)

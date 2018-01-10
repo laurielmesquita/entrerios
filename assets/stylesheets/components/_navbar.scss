@@ -51,6 +51,16 @@
       height: 38px;
    }
 
+   .btn-outline-secondary {
+
+      &:hover,
+      &:active,
+      &:focus {
+         border-color: #FFF;
+         background-color: transparent;
+      }
+   }
+
    .form-control {
       border-color: #868e96;
       background: transparent;
