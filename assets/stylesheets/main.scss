@@ -1,4 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./variables";
 @import "./general";
+@import "./components/mixins";
+@import "./components/typography";
 @import "./components/navbar";
 @import "./components/footer";
+@import "./components/breadcrumb";
+@import "./components/posts";
+@import "./components/buttons";
+@import "./components/pagination";
+@import "./components/aside";
+@import "./components/alerts";
+@import "./components/front";

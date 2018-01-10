@@ -1,0 +1,53 @@
+/// ASIDE
+
+.asideBox {
+   margin-bottom: $vr-60;
+
+   &__title {
+      position: relative;
+      padding-bottom: $vr-20;
+      border-bottom: 1px solid #C3C8CB;
+      font-weight: 700;
+      font-size: $f-24;
+
+      &:after {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 68px;
+         height: 1px;
+         background-color: #000;
+         content: ' ';
+      }
+   }
+
+   .list-group {
+      list-style: none;
+
+      .list-group-item {
+         margin-bottom: 0;
+         padding: 0.75rem 0;
+         border: 0;
+         border-bottom: 1px solid #DDD !important;
+         border-radius: 0;
+
+         &:before {
+            display: block;
+            float: left;
+            width: 1.2em;
+            content: "»";
+            font-size: 18px;
+            line-height: 23px;
+         }
+
+         a {
+            display: block;
+            font-size: $f-16;
+
+            &:hover {
+               color: $main-red;
+            }
+         }
+      }
+   }
+}

@@ -1,5 +1,21 @@
 ---
 title: Sobre Nós
+friends:
+   - Raul Lopes
+   - Diego Montalvão
+   - Leandro Lages
+   - Márcio Barros
+   - Wilson Araújo
+   - Leonel Veloso
 ---
 
-<h1>Sobre Nós</h1>
+<main class="container firstBody" role="main">
+   <h1 class="display-1"><%= current_page.data.title || "Entrerios" %></h1>
+   <p>Este Blog foi idealizado e criado por Raul Lopes e Diego Montalvão. As resenhas dos filmes ou discos/bandas dividirão espaço com as colunas: CINEMA AO REDOR que aborda as produções de um país ou de uma escola cinematográfica e EXTRACAMPO que trata de cotidiano, crônicas e literatura.</p>
+   <p>As publicações são realizadas semanalmente às quartas-feiras e elaboradas por:</p>
+   <ul>
+      <% current_page.data.friends.each do |f| %>
+      <li><%= f %></li>
+      <% end %>
+   </ul>
+</main>

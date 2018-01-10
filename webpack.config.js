@@ -9,7 +9,6 @@ const Clean = require('clean-webpack-plugin');
 module.exports = {
    entry: {
       main: './assets/javascripts/main.js',
-      other: './assets/javascripts/other.js',
    },
    output: {
       path: path.join(__dirname, '/.tmp/dist'),
@@ -51,7 +50,6 @@ module.exports = {
                            return [
                               require('rucksack-css'),
                               require('autoprefixer'),
-                              // require('cssnano')
                            ];
                         }
                      }
@@ -106,13 +104,18 @@ module.exports = {
       }),
       new Clean(['.tmp']),
       new ExtractTextPlugin('stylesheets/[name].bundle.css'),
-      // new PurifyCSSPlugin({
-      //   paths: glob.sync(path.join(__dirname, 'source/*.html.erb')),
-      //   purifyOptions: {
-      //     whitelist: ['show'],
-      //     minify: true
-      //   }
-      // }),
+      new PurifyCSSPlugin({
+         paths: glob.sync([
+            path.join(__dirname, 'source/*.html.erb'),
+            path.join(__dirname, 'source/layouts/*.erb'),
+            path.join(__dirname, 'source/partials/*.erb')
+         ]),
+         purifyOptions: {
+            minify: true,
+            info: true,
+            whitelist: ['show', 'collapsing']
+         }
+      }),
       new UglifyJsWebpackPlugin(),
    ],
 };

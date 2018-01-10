@@ -1,0 +1,32 @@
+.hgt__362 {
+   height: $hg-362;
+}
+
+.hgt__530 {
+   height: $hg-510;
+}
+
+.hgt__754 {
+   height: $hg-754;
+}
+
+.hgt__init-754 {
+   height: $hg-754;
+}
+
+@media (max-width: 767px) {
+
+   .hgt__754,
+   .hgt__init-754 {
+      height: $hg-362;
+   }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+   .hgt__init-754 {
+      height: $hg-362;
+   }
+
+}

@@ -1,0 +1,20 @@
+/// PAGINATION
+
+.page-link,
+.page-link:active {
+   border: 1px solid #ddd;
+   color: black;
+}
+
+.page-link:hover,
+.page-link:focus {
+   border: 1px solid $main-red;
+   background-color: $main-red;
+   color: white;
+}
+
+.page-item.active .page-link {
+   border-color: #DDD;
+   background-color: #FFF;
+   color: $main-red;
+}

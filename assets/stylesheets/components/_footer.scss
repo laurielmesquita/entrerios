@@ -1,13 +1,23 @@
+/// FOOTER
+
 .footer {
+   margin-top: $vr-40;
 
    .navbar-nav {
-      margin: 1.5rem 0;
+      margin: 1.5rem 0 0;
    }
 
    p {
+      margin-top: 1.2rem;
       width: 100%;
+      color: rgba(255, 255, 255, .7);
       text-align: center;
       font-size: .8rem;
-      color: rgba(255, 255, 255, .7);
+   }
+}
+
+@media (max-width: 991.99px) {
+   .d-low-none {
+      display: none !important;
    }
 }

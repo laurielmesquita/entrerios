@@ -1,0 +1,161 @@
+/// FRONT
+@import "./frontbox-hgt";
+
+.frontBox {
+   position: relative;
+   overflow: hidden;
+   margin-bottom: $vr-30;
+   color: #FFF;
+
+   &__content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: $vr-30;
+
+   }
+
+   &__link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 7;
+
+      span {
+         visibility: hidden;
+      }
+   }
+
+   &__header {
+      z-index: 5;
+      width: 100%;
+
+      &-tt {
+         margin: 0;
+         margin-bottom: $vr-20;
+         text-align: left;
+         font-weight: 500;
+         font-size: responsive 32px 36px;
+         font-family: $h-font;
+         line-height: 2.34rem;
+
+         @include tt-shadow;
+         font-range: 420px 1280px;
+      }
+
+   }
+
+   &__content.master {
+      padding: $vr-40;
+
+      .frontBox__header-tt {
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: responsive 38px 60px;
+         line-height: 4.2rem;
+
+         font-range: 420px 1280px;
+      }
+
+      .frontBox__info-txt {
+         line-height: 2.1rem;
+      }
+   }
+
+   &__info {
+      position: relative;
+      z-index: 9;
+      overflow: hidden;
+
+      &-txt {
+         margin: 0;
+         font-weight: 300;
+         font-size: responsive 18px 20px;
+         line-height: 1.745rem;
+
+         @include txt-shadow;
+         font-range: 420px 1280px;
+      }
+   }
+
+   &__figure {
+      width: 100%;
+   }
+
+   &__overlay {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, .05);
+
+      @include transition;
+
+      .frontBox:hover & {
+         background-color: rgba(0, 0, 0, .6);
+      }
+
+      &:after {
+         position: absolute;
+         top: 50%;
+         right: 0px;
+         bottom: 0px;
+         left: 0px;
+         z-index: 1;
+         background-color: initial;
+         background-image: linear-gradient(to top, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 80%);
+         background-attachment: initial;
+         background-position-x: initial;
+         background-position-y: initial;
+         background-clip: initial;
+         background-origin: initial;
+         background-size: initial;
+         content: "";
+
+         background-repeat-x: initial;
+         background-repeat-y: initial;
+      }
+   }
+
+   &__image {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+   }
+}
+
+@media (max-width: 575px) {
+
+   .frontBox__content.master {
+      padding: $vr-30;
+
+      .frontBox__header-tt {
+         line-height: 2.5rem;
+      }
+
+      .frontBox__info-txt {
+         line-height: 1.5rem;
+      }
+   }
+
+   .frontBox__header-tt {
+      line-height: 2.15rem;
+   }
+
+   .frontBox__info-txt {
+      line-height: 1.5rem;
+   }
+}
+
+@media (max-width: 1199px) {
+   .frontBox__info-txt {
+      line-height: 1.64rem;
+   }
+}

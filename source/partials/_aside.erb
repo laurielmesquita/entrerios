@@ -1,0 +1,19 @@
+<h3 class="sr-only">Barra lateral da página</h3>
+<section class="asideBox">
+   <h4 class="asideBox__title">Categorias</h4>
+   <span class="lineCover-separator to-lft"></span>
+   <ul class="list-group">
+      <% current_page.data.categories.each do |f| %>
+      <li class="list-group-item"><a href="./article.html"><%= f %></a></li>
+      <% end %>
+   </ul>
+</section>
+<section class="asideBox">
+   <h4 class="asideBox__title">Arquivo</h4>
+   <span class="lineCover-separator to-lft"></span>
+   <ul class="list-group">
+      <% current_page.data.months.each do |f| %>
+      <li class="list-group-item"><a href="./article.html"><%= f %></a></li>
+      <% end %>
+   </ul>
+</section>

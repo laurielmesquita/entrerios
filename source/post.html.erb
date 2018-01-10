@@ -1,5 +1,5 @@
 ---
-title: Conteúdo
+title: Eu queria ter nascido fã de sertanejo
 categories:
    - Poesia
    - Cinema
@@ -17,18 +17,19 @@ months:
    - Junho
 ---
 
-<main class="container firstBody" role="main">
-   <h1 class="display-1"><%= current_page.data.title || "Entrerios" %></h1>
+<div class="container firstBody">
+   <h1 class="display-post"><%= current_page.data.title || "Entrerios" %></h1>
    <ol class="breadcrumb">
       <li class="breadcrumb-item"><%= link_to "Homepage", "index.html", :relative => true, title: "Homepage" %></li>
-      <li class="breadcrumb-item active">Conteúdo</li>
+      <li class="breadcrumb-item"><%= link_to "Conteúdo", "content.html", :relative => true, title: "Conteúdo" %></li>
+      <li class="breadcrumb-item active">Eu queria ter nascido fã de sertanejo</li>
    </ol>
    <div class="row">
       <div class="col-md-8">
-         <%= partial 'partials/posts' %>
+         <%= partial 'partials/post' %>
       </div>
-      <div class="col-md-4">
+      <aside class="col-md-4">
          <%= partial 'partials/aside' %>
-      </div>
+      </aside>
    </div>
-</main>
+</div>

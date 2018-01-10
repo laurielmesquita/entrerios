@@ -1,0 +1,60 @@
+/// BUTTONS AND LINKS
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+   margin-bottom: $vr-20;
+   padding-right: 0;
+   padding-left: 0;
+   border-color: #FFF;
+   background-color: #FFF;
+   color: red;
+
+   &:hover {
+      border-color: #FFF;
+      background-color: #FFF;
+      color: red;
+
+      i.link-go {
+         padding-left: .5rem;
+      }
+
+      i.link-back {
+         padding-right: .5rem;
+      }
+   }
+
+   i.link-go,
+   i.link-back {
+      font-style: normal;
+
+      @include transition;
+   }
+
+   i.link-go {
+      padding-left: .1rem;
+   }
+
+   i.link-back {
+      padding-right: .1rem;
+   }
+}
+
+.btn-primary:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.dropdown-item {
+   background-color: #FFF;
+
+   &:hover {
+      border-color: #FFF;
+      background-color: #FFF;
+      color: red;
+   }
+}
