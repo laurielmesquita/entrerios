@@ -1,114 +1,114 @@
 /// NAVBAR
 
 .navbar {
-   padding: .8rem 1rem;
+  padding: .8rem 1rem;
 
-   .navbar-brand {
-      margin-right: 0;
-      padding-top: .5rem;
-      padding-bottom: .5rem;
-      width: 142px;
-      height: auto;
-   }
+  .navbar-brand {
+    margin-right: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 142px;
+    height: auto;
+  }
 
-   .nav-item {
-      padding: .35rem .45rem;
+  .nav-item {
+    padding: .35rem .45rem;
 
-      &:before {
-         float: left;
-         padding-right: 1rem;
-         color: red;
-         content: '//';
-         font-size: 13px;
-      }
-   }
-
-   .nav-link {
+    &:before {
       float: left;
-      padding: 0;
-      text-align: left;
-      text-transform: uppercase;
-      font-size: 14px;
-   }
+      padding-right: 1rem;
+      color: red;
+      content: '//';
+      font-size: 13px;
+    }
+  }
 
-   .dropdown-menu.show {
-      left: 1.2rem;
-   }
+  .nav-link {
+    float: left;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .dropdown-menu.show {
+    left: 1.2rem;
+  }
 
 }
 
 .bg-dark {
-   background-color: rgba(0, 0, 0, .80%) !important;
+  background-color: rgba(0, 0, 0, .80%) !important;
 
-   -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
-   backdrop-filter: saturate(180%) blur(20px) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
 }
 
 .form-inline {
 
-   .btn {
-      padding: 0.3rem 0.75rem;
-      height: 38px;
-   }
+  .btn {
+    padding: 0.3rem 0.75rem;
+    height: 38px;
+  }
 
-   .btn-outline-secondary {
+  .btn-outline-secondary {
 
-      &:hover,
-      &:active,
-      &:focus {
-         border-color: #FFF;
-         background-color: transparent;
-      }
-   }
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #FFF;
+      background-color: transparent;
+    }
+  }
 
-   .form-control {
-      border-color: #868e96;
+  .form-control {
+    border-color: #868e96;
+    background: transparent;
+    color: #FFF;
+
+    &:focus {
+      outline: 0;
+      border-color: #FFF;
       background: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
       color: #FFF;
-
-      &:focus {
-         outline: 0;
-         border-color: #FFF;
-         background: transparent;
-         -webkit-box-shadow: none;
-         box-shadow: none;
-         color: #FFF;
-      }
-   }
+    }
+  }
 }
 
 @media (max-width: 575px) {
-   .form-inline {
-      padding: .5rem 0 .3rem;
-   }
+  .form-inline {
+    padding: .5rem 0 .3rem;
+  }
 
-   .navbar {
-      .form-control {
-         width: auto;
-      }
-   }
+  .navbar {
+    .form-control {
+      width: auto;
+    }
+  }
 }
 
 @media (min-width: 767px) {
-   .navbar-expand-md {
-      flex-flow: wrap;
-   }
-   .nav-item:first-of-type {
-      &:before {
-         padding-right: 0;
-         content: '';
-      }
-   }
+  .navbar-expand-md {
+    flex-flow: wrap;
+  }
+  .nav-item:first-of-type {
+    &:before {
+      padding-right: 0;
+      content: '';
+    }
+  }
 }
 
 @media (max-width: 1199px) {
-   .dropdown-menu.show {
-      margin-top: 32px;
-   }
+  .dropdown-menu.show {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 1199px) {
-   .form-inline {
-      padding: .8rem 0;
-   }
+  .form-inline {
+    padding: .8rem 0;
+  }
 }
