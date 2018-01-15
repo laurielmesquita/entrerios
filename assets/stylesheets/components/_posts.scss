@@ -53,6 +53,10 @@
       }
    }
 
+   &__date {
+     color: lighten(#787B7B, 20) !important;
+   }
+
    &__img {
       overflow: hidden;
       margin-bottom: $vr-30;
