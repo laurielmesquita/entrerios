@@ -16,7 +16,7 @@ set :images_dir, 'images'
 
 # Prod
 configure :build do
-  activate :asset_hash
+  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
   activate :relative_assets
   set :relative_links, true
 end
