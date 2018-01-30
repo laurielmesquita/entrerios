@@ -11,12 +11,12 @@
    padding-left: 0;
    border-color: #FFF;
    background-color: #FFF;
-   color: red;
+   color: $main-color;
 
    &:hover {
       border-color: #FFF;
       background-color: #FFF;
-      color: red;
+      color: $main-color;
 
       i.link-go {
          padding-left: .5rem;
@@ -55,6 +55,6 @@
    &:hover {
       border-color: #FFF;
       background-color: #FFF;
-      color: red;
+      color: $main-color;
    }
 }

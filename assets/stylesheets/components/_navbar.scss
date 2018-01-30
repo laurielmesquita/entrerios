@@ -17,7 +17,7 @@
     &:before {
       float: left;
       padding-right: 1rem;
-      color: red;
+      color: $main-color;
       content: '//';
       font-size: 13px;
     }
@@ -38,10 +38,24 @@
 }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, .80%) !important;
+  background-color: rgba(0, 0, 0, .85%) !important;
 
   -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
   backdrop-filter: saturate(180%) blur(20px) !important;
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+
+      }
+
+      &:hover .nav-link,
+      &.active .nav-link {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 }
 
 .form-inline {

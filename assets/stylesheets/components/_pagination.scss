@@ -8,13 +8,13 @@
 
 .page-link:hover,
 .page-link:focus {
-   border: 1px solid $main-red;
-   background-color: $main-red;
+   border: 1px solid $main-color;
+   background-color: $main-color;
    color: white;
 }
 
 .page-item.active .page-link {
    border-color: #DDD;
    background-color: #FFF;
-   color: $main-red;
+   color: $main-color;
 }

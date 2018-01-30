@@ -3,38 +3,38 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:700,900');
 
 body {
-   text-align: justify;
-   padding-top: 73px;
+  padding-top: 73px;
+  text-align: justify;
 }
 
 .container.firstBody {
-   margin-top: $vr-30;
+  margin-top: $vr-30;
 }
 
 button:focus {
-   outline: none;
-   outline: none;
+  outline: none;
+  outline: none;
 }
 
 a {
-   color: #000;
+  color: #000;
 
-   @include transition;
+  @include transition;
 
-   &:hover {
-      color: red;
-      text-decoration: none;
-   }
+  &:hover {
+    color: $main-color;
+    text-decoration: none;
+  }
 }
 
 p {
-   font-size: 1.125rem;
+  font-size: 1.125rem;
 
-   a {
-      color: red;
-   }
+  a {
+    color: $main-color;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: $h-font;
+  font-family: $h-font;
 }

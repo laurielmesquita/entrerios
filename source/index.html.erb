@@ -3,32 +3,39 @@ title: Entrerios
 ---
 
 <main class="container firstBody" role="main">
-   <!-- Line 1 -->
-   <div class="row">
-      <div class="col-md-12">
-         <aside class="frontBox">
-            <div class="frontBox__content master d-flex flex-column">
-               <% link_to "post.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
-               <span></span>
-               <% end %>
-               <header class="frontBox__header">
-                  <h1 class="frontBox__header-tt">Mãe (EUA, 2017) I got bugs, bugs in the way</h1>
-               </header>
-               <div class="frontBox__info mt-auto">
-                  <p class="frontBox__info-txt">Metáfora: aprendi na escola católica, nas aulas de Comunicação e Expressão e de Religião, que significa dizer algo por meio de alegorias. Os padres usavam-na com muita frequência.</p>
-               </div>
-               <div class="frontBox__overlay"></div>
-            </div>
-            <div class="frontBox__figure hgt__530">
-               <%= image_tag "front01.jpg", :class => "frontBox__image", alt: "Eu queria ter nascido fã de sertanejo" %>
-            </div>
-         </aside>
-      </div>
-   </div>
-   <!-- Line 2 -->
-   <%= partial 'partials/line-2' %>
-   <!-- Line 3 -->
-   <%= partial 'partials/line-3' %>
-   <!-- Line 4 -->
-   <%= partial 'partials/line-4' %>
+  <!-- Line 1 -->
+  <div class="row">
+    <div class="col-md-12">
+      <aside class="frontBox">
+        <div class="frontBox__content master d-flex flex-column">
+          <% link_to "post.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
+          <span></span>
+          <% end %>
+          <header class="frontBox__header">
+            <h1 class="frontBox__header-tt">Mãe (EUA, 2017) I got bugs, bugs in the way</h1>
+          </header>
+          <div class="frontBox__info mt-auto">
+            <span class="frontBox__author">Raul Lopes</span>
+            <p class="frontBox__info-txt">Metáfora: aprendi na escola católica, nas aulas de Comunicação e Expressão e de Religião, que significa dizer algo por meio de alegorias. Os padres usavam-na com muita frequência.</p>
+          </div>
+          <div class="frontBox__overlay"></div>
+        </div>
+        <div class="frontBox__figure hgt__530">
+          <%= image_tag "front01.jpg", :class => "frontBox__image", alt: "Eu queria ter nascido fã de sertanejo" %>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <!-- Line 2 -->
+  <%= partial 'partials/line-2' %>
+  <!-- Line 3 -->
+  <%= partial 'partials/line-3' %>
+  <!-- Line 4 -->
+  <%= partial 'partials/line-4' %>
+
+  <div class="row">
+    <div class="col-md-12">
+      <%= link_to "Veja todas as postagens", "content.html", :relative => true, title: "Veja todas as postagens", class: "btn btn-success btn-lg btn-block" %>
+    </div>
+  </div>
 </main>

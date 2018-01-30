@@ -111,7 +111,7 @@ module.exports = {
             path.join(__dirname, 'source/partials/*.erb')
          ]),
          purifyOptions: {
-            minify: true,
+            // minify: true,
             info: true,
             whitelist: ['show', 'collapsing']
          }

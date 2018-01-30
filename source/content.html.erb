@@ -1,34 +1,34 @@
 ---
 title: Conteúdo
 categories:
-   - Poesia
-   - Cinema
-   - Conto
-   - Música
-   - Crônica
-   - Blablabla
+  - Poesia
+  - Cinema
+  - Conto
+  - Música
+  - Crônica
+  - Blablabla
 months:
-   - Dezembro
-   - Novembro
-   - Outubro
-   - Setembro
-   - Agosto
-   - Julho
-   - Junho
+  - Dezembro
+  - Novembro
+  - Outubro
+  - Setembro
+  - Agosto
+  - Julho
+  - Junho
 ---
 
 <main class="container firstBody" role="main">
-   <h1 class="display-1"><%= current_page.data.title || "Entrerios" %></h1>
-   <ol class="breadcrumb">
-      <li class="breadcrumb-item"><%= link_to "Homepage", "index.html", :relative => true, title: "Homepage" %></li>
-      <li class="breadcrumb-item active">Conteúdo</li>
-   </ol>
-   <div class="row">
-      <div class="col-md-8">
-         <%= partial 'partials/posts' %>
-      </div>
-      <div class="col-md-4">
-         <%= partial 'partials/aside' %>
-      </div>
-   </div>
+  <h1 class="display-1"><%= current_page.data.title || "Entrerios" %></h1>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to "Homepage", "index.html", :relative => true, title: "Homepage" %></li>
+    <li class="breadcrumb-item active">Conteúdo</li>
+  </ol>
+  <div class="row">
+    <div class="col-md-8">
+      <%= partial 'partials/posts' %>
+    </div>
+    <div class="col-md-4">
+      <%= partial 'partials/aside' %>
+    </div>
+  </div>
 </main>

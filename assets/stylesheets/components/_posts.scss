@@ -1,4 +1,20 @@
 /// POSTS
+.redList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-left: 1rem;
+
+    &:before {
+      padding-right: .5rem;
+      color: $main-color;
+      content: "• ";
+    }
+  }
+}
+
 
 .newsPost {
    position: relative;
@@ -28,7 +44,7 @@
 
       &:hover {
          a {
-            color: $main-red;
+            color: $main-color;
             text-decoration: none;
          }
       }

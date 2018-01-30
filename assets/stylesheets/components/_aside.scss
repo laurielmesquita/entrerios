@@ -35,6 +35,7 @@
             display: block;
             float: left;
             width: 1.2em;
+            color: $main-color;
             content: "»";
             font-size: 18px;
             line-height: 23px;
@@ -44,9 +45,34 @@
             display: block;
             font-size: $f-16;
 
-            &:hover {
-               color: $main-red;
+            &:hover,
+            &[aria-expanded="true"] {
+               color: $main-color;
             }
+         }
+
+         .listGroup {
+           margin-top: 0.5rem;
+           padding-left: 1.2rem;
+
+           a {
+             padding: 0.5rem 0;
+             border-top: 1px solid #DDD;
+
+             &:last-of-type {
+               padding-bottom: 0;
+             }
+
+             &:before {
+                display: block;
+                float: left;
+                width: 1.2em;
+                color: $main-color;
+                content: "- ";
+                font-size: 18px;
+                line-height: 23px;
+             }
+           }
          }
       }
    }

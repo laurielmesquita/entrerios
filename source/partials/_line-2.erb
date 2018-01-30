@@ -1,84 +1,88 @@
 <div class="row">
-   <!-- Column 1 -->
-   <div class="col-md-12 col-lg-4">
-      <aside class="frontBox">
-         <div class="frontBox__content d-flex flex-column">
-            <% link_to "content.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
-            <span></span>
-            <% end %>
-            <header class="frontBox__header">
-               <h1 class="frontBox__header-tt">Blow-up</h1>
-            </header>
-            <div class="frontBox__info mt-auto">
-               <p class="frontBox__info-txt">Há uma infinidade de obras que querem retratar a vida. Não pretendo aqui pontuar limites, mas fazer desta sentença um argumento estilístico para que se chegue ao tema de minha explanação - por demais met...</p>
-            </div>
-            <div class="frontBox__overlay"></div>
-         </div>
-         <div class="frontBox__figure hgt__init-754">
-            <%= image_tag "front02.jpg", :class => "frontBox__image", alt: "Blow-up" %>
-         </div>
-      </aside>
-   </div>
-   <!-- Column 2 -->
-   <div class="col-md-12 col-lg-8">
-      <aside class="frontBox">
-         <div class="frontBox__content d-flex flex-column">
-            <% link_to "filter.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
-            <span></span>
-            <% end %>
-            <header class="frontBox__header">
-               <h1 class="frontBox__header-tt">Quem gosta de música e vai para megafestival é babaca! Ou pelo menos…</h1>
-            </header>
-            <div class="frontBox__info mt-auto">
-               <p class="frontBox__info-txt">Os festivais gigantes, hoje, são um aglomerado de empresas vendendo suas marcas por todo lado, um turbilhão de propagandas e distrações sem fim. No final das contas, quem fica nos último…</p>
-            </div>
-            <div class="frontBox__overlay"></div>
-         </div>
-         <div class="frontBox__figure hgt__362">
-            <%= image_tag "front03.jpg", :class => "frontBox__image", alt: "Quem gosta de música e vai para megafestival é babaca! Ou pelo menos…" %>
-         </div>
-      </aside>
-      <!-- Inner line 1 -->
-      <div class="row">
-         <div class="col-sm-6">
-            <aside class="frontBox">
-               <div class="frontBox__content d-flex flex-column">
-                  <% link_to "about.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
-                  <span></span>
-                  <% end %>
-                  <header class="frontBox__header">
-                     <h1 class="frontBox__header-tt">Fertival de Violão de Teresina, 2017</h1>
-                  </header>
-                  <div class="frontBox__info mt-auto">
-                     <p class="frontBox__info-txt">Sábado, 7 da noite. Do meu quarto, sinto as paredes estremecerem às pancadas dos sons graves de um ‘paredão’...</p>
-                  </div>
-                  <div class="frontBox__overlay"></div>
-               </div>
-               <div class="frontBox__figure hgt__362">
-                  <%= image_tag "front04.jpg", :class => "frontBox__image", alt: "Fertival de Violão de Teresina, 2017" %>
-               </div>
-            </aside>
-         </div>
-
-         <div class="col-sm-6">
-            <aside class="frontBox">
-               <div class="frontBox__content d-flex flex-column">
-                  <% link_to "contact.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
-                  <span></span>
-                  <% end %>
-                  <header class="frontBox__header">
-                     <h1 class="frontBox__header-tt">Eu queria ter nascido fã de sertanejo</h1>
-                  </header>
-                  <div class="frontBox__info mt-auto">
-                     <p class="frontBox__info-txt">Gostaria de deixar claro que este texto não faz um comparativo de qualidade entre estilos estéticos, por motivos óbvios...</p>
-                  </div>
-                  <div class="frontBox__overlay"></div>
-               </div>
-               <div class="frontBox__figure hgt__362">
-                  <%= image_tag "front05.jpg", :class => "frontBox__image", alt: "Eu queria ter nascido fã de sertanejo" %>
-               </div>
-            </aside>
-         </div>
+  <!-- Column 1 -->
+  <div class="col-md-12 col-lg-4">
+    <aside class="frontBox">
+      <div class="frontBox__content d-flex flex-column">
+        <% link_to "content.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
+        <span></span>
+        <% end %>
+        <header class="frontBox__header">
+          <h1 class="frontBox__header-tt">Blow-up</h1>
+        </header>
+        <div class="frontBox__info mt-auto">
+          <span class="frontBox__author">Diego de Montalvão</span>
+          <p class="frontBox__info-txt">Há uma infinidade de obras que querem retratar a vida. Não pretendo aqui pontuar limites, mas fazer desta sentença um argumento estilístico para que se chegue ao tema de minha explanação - por demais met...</p>
+        </div>
+        <div class="frontBox__overlay"></div>
       </div>
-   </div>
+      <div class="frontBox__figure hgt__init-754">
+        <%= image_tag "front02.jpg", :class => "frontBox__image", alt: "Blow-up" %>
+      </div>
+    </aside>
+  </div>
+  <!-- Column 2 -->
+  <div class="col-md-12 col-lg-8">
+    <aside class="frontBox">
+      <div class="frontBox__content d-flex flex-column">
+        <% link_to "filter.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
+        <span></span>
+        <% end %>
+        <header class="frontBox__header">
+          <h1 class="frontBox__header-tt">Quem gosta de música e vai para megafestival é babaca! Ou pelo menos…</h1>
+        </header>
+        <div class="frontBox__info mt-auto">
+          <span class="frontBox__author">Leandro Lages</span>
+          <p class="frontBox__info-txt">Os festivais gigantes, hoje, são um aglomerado de empresas vendendo suas marcas por todo lado, um turbilhão de propagandas e distrações sem fim. No final das contas, quem fica nos último…</p>
+        </div>
+        <div class="frontBox__overlay"></div>
+      </div>
+      <div class="frontBox__figure hgt__362">
+        <%= image_tag "front03.jpg", :class => "frontBox__image", alt: "Quem gosta de música e vai para megafestival é babaca! Ou pelo menos…" %>
+      </div>
+    </aside>
+    <!-- Inner line 1 -->
+    <div class="row">
+      <div class="col-sm-6">
+        <aside class="frontBox">
+          <div class="frontBox__content d-flex flex-column">
+            <% link_to "about.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
+            <span></span>
+            <% end %>
+            <header class="frontBox__header">
+              <h1 class="frontBox__header-tt">Fertival de Violão de Teresina, 2017</h1>
+            </header>
+            <div class="frontBox__info mt-auto">
+              <span class="frontBox__author">Leonel Veloso</span>
+              <p class="frontBox__info-txt">Sábado, 7 da noite. Do meu quarto, sinto as paredes estremecerem às pancadas dos sons graves de um ‘paredão’...</p>
+            </div>
+            <div class="frontBox__overlay"></div>
+          </div>
+          <div class="frontBox__figure hgt__362">
+            <%= image_tag "front04.jpg", :class => "frontBox__image", alt: "Fertival de Violão de Teresina, 2017" %>
+          </div>
+        </aside>
+      </div>
+
+      <div class="col-sm-6">
+        <aside class="frontBox">
+          <div class="frontBox__content d-flex flex-column">
+            <% link_to "contact.html", :relative => true, title: "Sobre Nós", class: "frontBox__link" do %>
+            <span></span>
+            <% end %>
+            <header class="frontBox__header">
+              <h1 class="frontBox__header-tt">Eu queria ter nascido fã de sertanejo</h1>
+            </header>
+            <div class="frontBox__info mt-auto">
+              <span class="frontBox__author">Márcio Barros</span>
+              <p class="frontBox__info-txt">Gostaria de deixar claro que este texto não faz um comparativo de qualidade entre estilos estéticos, por motivos óbvios...</p>
+            </div>
+            <div class="frontBox__overlay"></div>
+          </div>
+          <div class="frontBox__figure hgt__362">
+            <%= image_tag "front05.jpg", :class => "frontBox__image", alt: "Eu queria ter nascido fã de sertanejo" %>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
 </div>
