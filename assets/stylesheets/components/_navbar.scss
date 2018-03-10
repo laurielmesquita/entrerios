@@ -7,7 +7,7 @@
     margin-right: 0;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    width: 142px;
+    width: 158.1px;
     height: auto;
   }
 
@@ -33,6 +33,17 @@
 
   .dropdown-menu.show {
     left: 1.2rem;
+  }
+  .dropdown-item {
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &.active {
+      background-color: $main-color;
+    }
   }
 
 }
